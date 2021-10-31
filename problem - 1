@@ -16,6 +16,7 @@ public:
         while(runner->next && runner->next->next) {
             walker = walk->next;
             runner = runner->next->next;
+            if (runner == walker) return true;
         }
         
         return false;
