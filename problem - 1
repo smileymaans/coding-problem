@@ -14,8 +14,8 @@ public:
         ListNode * runner = head;
         
         while(runner->next && runner->next->next) {
-            walker = walk->next;
-            runner = runner->next->next;
+            walker = walker->next;
+            runner = runner->next->next; 
         }
         
         return false;
