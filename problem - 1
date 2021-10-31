@@ -9,7 +9,7 @@ Return true if there is a cycle in the linked list. Otherwise, return false.*/
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
-        
+        if (head == NULL) return NULL;
         ListNode * walker = head;
         ListNode * runner = head;
         
