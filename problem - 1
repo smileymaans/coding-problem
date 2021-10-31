@@ -11,6 +11,7 @@ public:
     bool hasCycle(ListNode *head) {
         
         ListNode * walker = head;
+        ListNode * runner = head;
         
         while(runner->next && runner->next->next) {
             walker = walk->next;
